@@ -1,0 +1,45 @@
+# ============================================================
+# EVACUAIDE - repository ignore rules
+# Keep source + deliverables; exclude regenerable caches & junk.
+# ============================================================
+
+# ---- Unity: generated / machine-local (never commit) ----
+EvacuaideVR/Library/
+EvacuaideVR/Temp/
+EvacuaideVR/Obj/
+EvacuaideVR/Logs/
+EvacuaideVR/UserSettings/
+EvacuaideVR/Builds/
+EvacuaideVR/[Bb]uild/
+EvacuaideVR/MemoryCaptures/
+EvacuaideVR/*.csproj
+EvacuaideVR/*.sln
+EvacuaideVR/*.log
+EvacuaideVR/unity_*.log
+
+# ---- Stale/empty Unity shells at repo root (junk) ----
+cheche/
+Chehe unity/
+My project/
+
+# ---- Blender backups & caches ----
+*.blend1
+*.blend2
+*.blend@
+Scripts/__pycache__/
+**/__pycache__/
+
+# ---- Internal / temporary helper scripts + scratch renders (not for client) ----
+Evacuaide_Assets_Rhenmart/Scripts/_*.py
+Evacuaide_Assets_Rhenmart/diag_current.png
+Evacuaide_Assets_Rhenmart/design_improved.png
+
+# ---- Local IDE / agent config (machine-specific, not a client deliverable) ----
+.kiro/
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak

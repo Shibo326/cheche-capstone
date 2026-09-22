@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768"
+     viewBox="0 0 1024 768">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1024" height="768" fill="#FFFFFF"/>
+  <rect x="24" y="24" width="976" height="60" fill="#FFFFFF" stroke="#111111" stroke-width="3" rx="0"/>
+  <text x="512.0" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#000">MANILA INNOVATIONS TOWER</text>
+  <text x="512.0" y="72" font-family="Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#333">Ika-limang Palapag (Fifth Floor)  /  Executive Suites</text>
+  <rect x="24" y="96" width="976" height="544" fill="#F7F7F7" stroke="#111111" stroke-width="3" rx="0"/>
+  <rect x="80" y="180" width="150" height="80" fill="#FFFFFF" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="155.0" y="218.0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">OPISINA NG CEO</text>
+  <text x="155.0" y="234.0" font-family="Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#444">CEO Office</text>
+  <rect x="80" y="290" width="150" height="80" fill="#FFFFFF" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="155.0" y="328.0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">OPISINA NG CEO</text>
+  <text x="155.0" y="344.0" font-family="Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#444">CEO Office</text>
+  <rect x="250" y="150" width="160" height="70" fill="#FFFFFF" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="330.0" y="183.0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">PAGPAPAHINGAHAN</text>
+  <text x="330.0" y="199.0" font-family="Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#444">Private Lounge</text>
+  <rect x="600" y="150" width="150" height="70" fill="#FFFFFF" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="675.0" y="183.0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">LUXURY OFFICE</text>
+  <text x="675.0" y="199.0" font-family="Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#444">Luxury Office</text>
+  <rect x="770" y="180" width="150" height="80" fill="#FFFFFF" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="845.0" y="218.0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">IBANG OPISINA</text>
+  <text x="845.0" y="234.0" font-family="Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#444">Other Office</text>
+  <rect x="560" y="300" width="46" height="46" fill="#D32F2F" stroke="#111111" stroke-width="2" rx="0"/>
+  <text x="583" y="362" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#D32F2F">PANTRY</text>
+  <text x="583" y="373" font-family="Arial, sans-serif" font-size="8" font-weight="normal" text-anchor="middle" fill="#D32F2F">KUSINA</text>
+  <rect x="430" y="300" width="90" height="110" fill="#1565C0" stroke="#111111" stroke-width="2" rx="0"/>
+  <line x1="438" y1="315" x2="512" y2="315" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="438" y1="333" x2="512" y2="333" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="438" y1="351" x2="512" y2="351" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="438" y1="369" x2="512" y2="369" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="438" y1="387" x2="512" y2="387" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="475.0" y="424" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#1565C0">HAGDANAN</text>
+  <text x="475.0" y="435" font-family="Arial, sans-serif" font-size="8" font-weight="normal" text-anchor="middle" fill="#1565C0">STAIRWELL</text>
+  <polyline points="180,400 420,400" fill="none" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <polyline points="690,400 540,400" fill="none" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <polyline points="475,425 475,560 520,560" fill="none" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <text x="520" y="566" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="start" fill="#2E7D32">PABABA / DOWN</text>
+  <circle cx="900" cy="300" r="22" fill="#F2C200" stroke="#111111" stroke-width="2"/>
+  <text x="900" y="340" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#8a6d00">TIPUNAN</text>
+  <text x="900" y="351" font-family="Arial, sans-serif" font-size="8" font-weight="normal" text-anchor="middle" fill="#8a6d00">ASSEMBLY</text>
+  <text x="32" y="664" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#000">LEGEND</text>
+  <line x1="32" y1="682" x2="58" y2="682" stroke="#2E7D32" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="68" y="686" font-family="Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#000">Ruta ng Paglabas / Emergency Exit Route</text>
+  <rect x="32" y="694" width="26" height="16" fill="#D32F2F" stroke="#111111" stroke-width="1" rx="0"/>
+  <text x="68" y="706" font-family="Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#000">Mapanganib na Lugar / Hazard Zone</text>
+  <rect x="32" y="714" width="26" height="16" fill="#1565C0" stroke="#111111" stroke-width="1" rx="0"/>
+  <text x="68" y="726" font-family="Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#000">Hagdanan / Stairwell</text>
+  <circle cx="45" cy="742" r="8" fill="#F2C200" stroke="#111111" stroke-width="2"/>
+  <text x="68" y="746" font-family="Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#000">Tipunang Lugar / Assembly Area</text>
+</svg>
