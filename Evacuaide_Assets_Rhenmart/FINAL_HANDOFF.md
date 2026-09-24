@@ -38,6 +38,22 @@ entirely from a reproducible script pipeline (single source of truth:
   electrical panel, ceiling debris), stairwell A + B, central elevator bank
   with a "DO NOT USE DURING EARTHQUAKE" X mark.
 
+**Separate Evacuation Center (SEPARATE building — safety requirement):**
+Per the client requirement, the evacuation/relief center is a STANDALONE
+single-storey building placed OUTDOORS at the rear of the site, well clear of
+the office tower (it is unsafe to shelter inside the high-rise being
+evacuated). Built by `phase4c_evac_center.py`.
+- Located ~28 m behind the tower; verified **9.9 m clear gap, no overlap** with
+  the tower footprint.
+- Low, open-span, quick-exit hall: wide clear span, two 4 m entrances, low
+  perimeter walls, flat roof on columns (seismically safer than a tower).
+- Green safety cross + backlit "EVACUATION CENTER" signage over the entrance.
+- Relief fit-out: rows of cots, first-aid station, water dispenser + supply
+  crates, folding tables + benches, directory board.
+- Connected to the tower's rear muster ring by a concrete walkway with green
+  directional arrows, so the evacuation flow reads end-to-end:
+  **floor exit -> stairwell -> outside -> muster ring -> guided path -> center.**
+
 **Evacuation maps:** 5 top-down floor plans as both PNG (ready textures) and
 SVG (vector), colour-coded per floor.
 
@@ -56,9 +72,13 @@ Two headless validators were run against the fully built scene:
   placements.
 
 **Export integrity** (`Scripts/_verify_export.py`):
-- GLB and FBX both re-import cleanly: **1,910 meshes, 85 materials, 17 emissive
-  materials preserved** (evac arrows, exit signs, hazard glow, equipment).
+- GLB and FBX both re-import cleanly: **2,038 meshes, 104 materials, 22 emissive
+  materials preserved** (evac arrows, exit signs, hazard glow, equipment,
+  evac-center safety signage) — includes the separate evacuation center.
 - Scale sane (1 unit = 1 m), Y-up, upright, correct bounds.
+- NOTE: `OfficeBuilding_5F.fbx` is the canonical export (owned by phase9);
+  `OfficeBuilding_5F_shell.fbx` is only the plain shell from phase2 and is not
+  used by Unity.
 
 **Bugs found & fixed this pass:**
 1. **Elevator "DO NOT USE" X** — the two diagonal strokes were overlapping into
@@ -153,8 +173,8 @@ blender --background --python Scripts\_verify_export.py    # export integrity
 
 **Pipeline order** (`Scripts/run_all.py`): `phase2_building` → `phase2b_facade`
 → `phase2c_interior` → `phase2d_detail` → `phase2e_office` → `phase2f_finish`
-→ `phase10_polish` → `phase4b_exterior` → `phase9_export_glb` →
-`phase8_floor_maps` → `phase2e_cutaway`.
+→ `phase4b_exterior` → `phase4c_evac_center` → `phase10_polish` →
+`phase9_export_glb` → `phase8_floor_maps` → `phase2e_cutaway`.
 
 ---
 

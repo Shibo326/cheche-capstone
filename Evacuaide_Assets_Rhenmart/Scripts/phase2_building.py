@@ -242,10 +242,14 @@ def main():
         if objs:
             export_fbx(objs, os.path.join(FLOORS_DIR, f"Floor_{f:02d}.fbx"))
 
-    # full building FBX: every mesh, including exterior pieces (e.g. the
-    # assembly-point marker) that belong to no single floor.
+    # Full building SHELL FBX. NOTE: this writes a SEPARATE filename
+    # (OfficeBuilding_5F_shell.fbx), NOT the canonical OfficeBuilding_5F.fbx.
+    # The canonical file is owned solely by phase9_export_glb (the fully
+    # decorated + facade + interior + exterior + evac-center export). Keeping
+    # them separate prevents this shell-only pass from clobbering the final
+    # Unity asset when phase2 is run standalone (e.g. by a verify script).
     all_objs = [o for o in bpy.data.objects if o.type == 'MESH']
-    export_fbx(all_objs, os.path.join(BUILDING_DIR, "OfficeBuilding_5F.fbx"))
+    export_fbx(all_objs, os.path.join(BUILDING_DIR, "OfficeBuilding_5F_shell.fbx"))
 
     print("DONE. Rebuilt blueprint building:",
           sum(len(v) for v in floor_objects.values()), "objects across",
