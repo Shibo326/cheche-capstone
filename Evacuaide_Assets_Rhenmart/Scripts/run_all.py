@@ -26,6 +26,7 @@ Phases run here (each in a fresh scene):
     phase2e_office.py     corporate office fit-out (cubicles, chairs, monitors)
     phase2f_finish.py     corporate material + floor/wall finish pass
     phase4b_exterior.py   corporate campus site (the "labas")
+    phase4c_evac_center.py SEPARATE evacuation center building (rear of site)
     phase9_export_glb.py  export Unity-ready GLB (+ FBX) of the full building
     phase8_floor_maps.py  render top-down floor-plan map PNGs (1..5)
     phase2e_cutaway.py    open the working scene into a dollhouse cross-section
@@ -68,6 +69,7 @@ PHASES = [
     "phase2e_office.py",      # corporate office fit-out: cubicles, chairs, monitors
     "phase2f_finish.py",      # corporate material + floor/wall finish pass
     "phase4b_exterior.py",    # corporate campus site (labas)
+    "phase4c_evac_center.py", # SEPARATE evacuation center building (rear, off-tower)
     "phase10_polish.py",      # minimal polish: exterior lamp posts + interior trims
     "phase9_export_glb.py",   # Unity-ready GLB + FBX of the decorated building
     "phase8_floor_maps.py",   # top-down floor-plan map renders
